@@ -1,0 +1,202 @@
+.navbarText ul li a {
+    color: #ffffff;
+    font-family: Outfit;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.my-awesome-icon {
+    color: white;
+    font-size: 25px;
+}
+
+.my-awesome-icon:hover {
+    cursor: pointer;
+}
+
+.home {
+    background-image: url(../Images/homeImg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: static;
+    width: 100%;
+    height: 600px;
+    opacity: 0.8;
+}
+
+.home-text {
+    padding-top: 225px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.aboutNeo {
+    font-family: Outfit;
+    font-size: 30px;
+    letter-spacing: 0.15em;
+}
+
+.aboutNeo1 {
+    font-family: Outfit;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+}
+
+.blog1 {
+    font-size: 50px;
+    font-family: Outfit;
+}
+
+/* .blog {
+    padding: 100px 250px 50px 100px;
+    font-family: Outfit;
+    letter-spacing: 0.12em;
+}
+
+
+
+.blog2 {
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+.blog3 {
+    font-size: 16px;
+    padding-right: 300px;
+
+}
+
+.blog1 {
+    font-size: 25px;
+} */
+
+.inputField {
+    border-radius: 4px;
+}
+
+.button-wrapper button {
+    background-color: bisque;
+    padding: 1.0em 1.8em;
+
+}
+
+.button-wrapper button:hover {
+    background-color: bisque;
+    color: black;
+}
+
+.pText {
+    font-family: Outfit;
+    font-size: 60px;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 370px;
+    transition: 0.5s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.view-button {
+    padding: 10px 20px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27.5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.image-container:hover .view-button {
+    transform: scale(1.5);
+}
+
+.sf1 {
+    font-family: Outfit;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+}
+
+.sf2 {
+    font-family: Outfit;
+    font-size: 25px;
+    letter-spacing: 0.07em;
+}
+
+.sf3 {
+    font-family: Outfit;
+    font-size: 15px;
+    letter-spacing: 0.07em;
+}
+
+.shorts-text {
+    font-family: Outfit;
+    font-size: 25px;
+    letter-spacing: 0.07em;
+}
+
+.overlay-shorts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    transition: 0.5s ease;
+}
+
+.shorts-icon {
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+
+    .navBar {
+        margin-left: 0px;
+    }
+
+    .navbar-toggler {
+        height: 25px;
+        width: 20px;
+        border-color: #FFF;
+    }
+
+    .navbar-toggler-icon {
+        padding: 0;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='10 5 40 36'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
