@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Components/Header'
-import Signup from '../Components/Signup'
+import Signup from '../Components/SignUp'
 import Footer from '../Components/Footer'
 
 function SignupPage() {

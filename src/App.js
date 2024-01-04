@@ -13,9 +13,14 @@ import SignupPage from './Pages/SignupPage';
 function App() {
   return (
     <div>
+      {/* <Routes>
+        <Route path='/' element={< HomePage />}></Route>
+        <Route path='/about' element={< AboutPage />}></Route>
+      </Routes> */}
       <SignupPage />
       {/* 
       <HomePage />
+      
       <AboutPage/>
       <BlogPage />
       <ContactPage />
