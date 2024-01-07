@@ -19,6 +19,7 @@ function App() {
 
       {/* 
       <SignUpPage />
+      <StorePage/>
       <HomePage />
       <AboutPage/>
       <BlogPage />
