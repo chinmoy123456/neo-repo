@@ -1,16 +1,15 @@
-import React from 'react';
+import React from 'react'
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
 
-const SignUp = () => {
+const SignIn = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
@@ -34,11 +33,12 @@ const SignUp = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <Avatar sx={{ m: 1, backgroundImage: 'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5)' }}>
+                    {/* <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
                         <LockOutlinedIcon />
-                    </Avatar>
+                    </Avatar> */}
                     <Typography component="h1" variant="h4" fontWeight='bold' color='orangered' >
-                        Sign up
+                        Sign in
+                        
                     </Typography>
                     <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
                         <Grid container spacing={2}>
@@ -106,21 +106,20 @@ const SignUp = () => {
                             </Grid>
                         </Grid>
                         <Button
+                            
                             type="submit"
                             fullWidth
                             variant="contained"
-                            sx={{
-                                mt: 3,
-                                mb: 2,
-                                backgroundImage: 'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5);'
-                            }}
+                            sx={{ mt: 3,
+                             mb: 2,
+                             backgroundImage:'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5)' }}
                         >
-                            Sign Up
+                            Sign In
                         </Button>
                         <Grid container justifyContent="center">
                             <Grid item>
                                 <a href="#" variant="body2">
-                                    Already have an account? Sign in
+                                    Don't have an account? Sign up
                                 </a>
                             </Grid>
                         </Grid>
@@ -131,4 +130,4 @@ const SignUp = () => {
     );
 }
 
-export default SignUp 
+export default SignIn 

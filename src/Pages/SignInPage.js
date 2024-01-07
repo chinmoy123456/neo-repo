@@ -1,16 +1,17 @@
 import React from 'react'
 import Header from '../Components/Header'
-import SignUp from '../Components/SignUp'
+import SignIn from '../Components/SignIn'
 import Footer from '../Components/Footer'
 
-function SignUpPage() {
+function SignInPage() {
     return (
         <div>
             <Header />
-            <SignUp />
+            <SignIn />
             <Footer />
         </div>
     )
 }
 
-export default SignUpPage
+export default SignInPage
+
