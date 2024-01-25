@@ -1,17 +1,16 @@
 import React from 'react'
 import Header from '../Components/Header'
-import SignIn from '../Components/SignIn'
+import Youtube from '../Components/Youtube'
 import Footer from '../Components/Footer'
 
-function SignInPage() {
+function YoutubePage() {
     return (
         <div>
             <Header />
-            <SignIn />
+            <Youtube />
             <Footer />
         </div>
     )
 }
 
-export default SignInPage
-
+export default YoutubePage

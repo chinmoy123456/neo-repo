@@ -1,8 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbarText ul li a {
     color: #ffffff;
     font-family: Outfit;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-family: Outfit;
 }
 
 a {
@@ -10,7 +21,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline;  */
+    color: bisque !important;
 }
 
 .my-awesome-icon {
@@ -20,22 +32,31 @@ a:hover {
 
 .my-awesome-icon:hover {
     cursor: pointer;
+    color: bisque;
 }
 
 .home {
-    background-image: url(../Images/homeImg1.jpg);
+    background-image: url(../Images/homeImg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: static;
-    width: 100%;
-    height: 600px;
-    opacity: 0.8;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
 }
 
 .home-text {
     padding-top: 225px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2em;
+}
+
+.home-text-1 {
+    font-size: 45px;
+}
+
+.home-text-2 {
+    font-size: 20px;
 }
 
 .aboutNeo {
@@ -55,28 +76,6 @@ a:hover {
     font-family: Outfit;
 }
 
-/* .blog {
-    padding: 100px 250px 50px 100px;
-    font-family: Outfit;
-    letter-spacing: 0.12em;
-}
-
-
-
-.blog2 {
-    font-size: 65px;
-    font-weight: bolder;
-}
-
-.blog3 {
-    font-size: 16px;
-    padding-right: 300px;
-
-}
-
-.blog1 {
-    font-size: 25px;
-} */
 
 .inputField {
     border-radius: 4px;
@@ -89,16 +88,18 @@ a:hover {
 }
 
 .button-wrapper button:hover {
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.909);
     color: black;
 }
 
+
 .pText {
     font-family: Outfit;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.2em;
     letter-spacing: 0.1em;
 }
+
 
 .image-container {
     position: relative;
@@ -178,7 +179,33 @@ a:hover {
     font-size: 40px;
 }
 
-@media (max-width: 991px) {
+
+
+@media (max-width: 768px) {
+    .home {
+        background-image: url(../Images/homeImg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: static;
+        max-width: 100%;
+        height: 90vh;
+        opacity: 1;
+    }
+
+    .home-text {
+        padding-top: 160px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.2em;
+
+    }
+
+    .home-text-1 {
+        font-size: 25px;
+    }
+
+    .home-text-2 {
+        font-size: 10px;
+    }
 
     .sidebar {
         background-color: rgba(255, 255, 255, 0.15);
@@ -199,4 +226,207 @@ a:hover {
         padding: 0;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='10 5 40 36'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
+
+    .image-container {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 370px;
+        transition: 0.5s ease;
+    }
+
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .view-button {
+        padding: 10px 20px;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: none;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27.5px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .image-container:hover .view-button {
+        transform: scale(1.5);
+    }
+
+    .button-wrapper button {
+        background-color: bisque;
+        padding: 1.0em 1.8em;
+
+    }
+
+    .button-wrapper button:hover {
+        background-color: rgba(255, 228, 196, 0.909);
+        color: black;
+    }
+
 }
+
+
+
+@media (max-width: 480px) {
+    .home {
+        background-image: url(../Images/homeImg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: static;
+        max-width: 100%;
+        height: 90vh;
+        opacity: 1;
+    }
+
+    .home-text {
+        padding-top: 160px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.2em;
+
+    }
+
+    .home-text-1 {
+        font-size: 25px;
+    }
+
+    .home-text-2 {
+        font-size: 10px;
+    }
+
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+
+    .navBar {
+        margin-left: 0px;
+    }
+
+    .navbar-toggler {
+        height: 25px;
+        width: 20px;
+        border-color: #FFF;
+    }
+
+    .navbar-toggler-icon {
+        padding: 0;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='10 5 40 36'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 370px;
+        transition: 0.5s ease;
+    }
+
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .view-button {
+        padding: 10px 20px;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: none;
+        color: #FFF;
+        font-family: Outfit;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 27.5px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .image-container:hover .view-button {
+        transform: scale(1.5);
+    }
+
+    .button-wrapper button {
+        background-color: bisque;
+        padding: 1.0em 1.8em;
+
+    }
+
+    .button-wrapper button:hover {
+        background-color: rgba(255, 228, 196, 0.909);
+        color: black;
+    }
+
+}
+
+
+
+
+/* @media (max-width: 991px) {
+    .home {
+        background-image: url(../Images/homeImg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: static;
+        max-width: 100%;
+        height: 90vh;
+        opacity: 0.8;
+    }
+
+    .home-text {
+        padding-top: 160px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.2em;
+
+    }
+
+    .home-text-1 {
+        font-size: 25px;
+    }
+
+    .home-text-2 {
+        font-size: 10px;
+    }
+
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+
+    .navBar {
+        margin-left: 0px;
+    }
+
+    .navbar-toggler {
+        height: 25px;
+        width: 20px;
+        border-color: #FFF;
+    }
+
+    .navbar-toggler-icon {
+        padding: 0;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='10 5 40 36'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+} */

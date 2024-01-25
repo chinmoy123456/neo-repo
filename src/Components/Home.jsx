@@ -5,10 +5,10 @@ function Home() {
         <div >
             <div className='home text-start '>
                 <div className='home-text d-flex flex-column justify-content-center align-items-center text-light mt-6'>
-                    <div className='' style={{ fontSize: '45px' }}>
+                    <div className='home-text-1'>
                         NEO'S STUDIO
                     </div>
-                    <div className=''>
+                    <div className='home-text-2'>
                         film director / artist / youtuber
                     </div>
                 </div>

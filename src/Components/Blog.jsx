@@ -1,21 +1,22 @@
 import React from 'react'
-import Img1 from "../Images/Img1.jpg";
-import Img2 from "../Images/Img2.jpg";
-import Img3 from "../Images/Img3.jpg";
-import Img4 from "../Images/Img4.jpg";
+import blogImg1 from "../Images/blogImg1.jpg";
+import blogImg2 from "../Images/blogImg2.jpg";
+import blogImg3 from "../Images/blogImg3.jpg";
+import blogImg4 from "../Images/blogImg4.jpg";
 
 
 function Blog() {
+
     return (
-        <div className='mx-0 text-light' style={{ backgroundColor: 'black' }}>
+        <div className='px-3 pb-3 text-light' style={{ backgroundColor: 'black' }}>
             <div className='blog1 text-center'>
                 Blog
             </div>
-            <div className='row pt-5 text-light'>
-                <div className='col-md-1'></div>
-                <div className='col-md-5 col-sm-12'>
-                    <a href='' target="_blank">
-                        <img src={Img1} height="550px" width="100%" className='mb-3' />
+            <div className='row mx-3  text-light'>
+                {/* <div className='col-md-1'></div> */}
+                <div className='blog-items col-md-6 col-sm-12 pt-5'>
+                    <a href='' >
+                        <img src={blogImg1} height="550px" width="100%" className='mb-3' />
                     </a>
                     <div>
                         <div>
@@ -26,27 +27,29 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-5 col-sm-12'>
-                    <a href='https://youtu.be/gtzvOnAjeqo' target="_blank">
-                        <img src={Img2} height="500px" width="100%" className='mb-3' />
-                    </a>
-                    <div>
+                <div className='col-md-6 col-sm-12 pt-5'>
+                    <div className='row'>
+                        <a href=' '>
+                            <img src={blogImg2} height="500px" width="100%" className='mb-3' />
+                        </a>
                         <div>
-                            <h2>Mexico: A Culinary Journey</h2>
-                        </div>
-                        <div>
-                            Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
+                            <div>
+                                <h2>Mexico: A Culinary Journey</h2>
+                            </div>
+                            <div>
+                                Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className='col-md-1'></div>
+                {/* <div className='col-md-1'></div> */}
             </div>
 
-            <div className='row pt-5 text-light'>
-                <div className='col-md-1'></div>
-                <div className='col-md-5 col-sm-12'>
-                    <a href='https://youtu.be/gtzvOnAjeqo' target="_blank">
-                        <img src={Img3} height="500px" width="100%" className='mb-3' />
+            <div className='row mx-3 text-light'>
+                {/* <div className='col-md-1'></div> */}
+                <div className='col-md-6 pt-5 col-sm-12'>
+                    <a href=' ' >
+                        <img src={blogImg3} height="500px" width="100%" className='mb-3' />
                     </a>
                     <div>
                         <div>
@@ -57,9 +60,9 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-5 col-sm-12'>
-                    <a href='' target="_blank">
-                        <img src={Img4} height="550px" width="100%" className='mb-3' />
+                <div className='col-md-6 pt-5 col-sm-12'>
+                    <a href=''>
+                        <img src={blogImg4} height="550px" width="100%" className='mb-3' />
                     </a>
                     <div>
                         <div>
@@ -70,7 +73,7 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-1'></div>
+                {/* <div className='col-md-1'></div> */}
             </div>
         </div>
     )
