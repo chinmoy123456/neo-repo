@@ -42,12 +42,10 @@ function About() {
             <div className='mt-4 text-center aboutNeo'>
               ABOUT NEO
             </div>
-            <div className='text-left container mt-5 aboutNeo1'>
-              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+            <div className='text-left container mt-4 aboutNeo1'>
+              I'm a filmmaker creating cozy and fun little films. I've had the privilege of directing commercials for brands like Samsung, Toyota, BMW, Coca-Cola, Red Bull and many more. So, if you're into mind-numbing content that's also weirdly satisfying, you're in the right place!               <br />
               <br />
-              <br />
-              This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company.
-            </div>
+              I'm also here to help aspiring filmmakers succeed in their careers. On my YouTube channel, I share my experiences and provide guidance to those who are just starting out. I understand how tough it can be to break into the industry. But I'm here to tell you that with dedication and the right resources, you can make it happen.            </div>
           </div>
         </div>
       </div>

@@ -41,13 +41,13 @@ function Header() {
               </ul>
               <div className="d-md-none">
                 {/* Tablet or Mobile view: Login and Signup buttons */}
-                <div className='mb-3 '>
+                {/* <div className='mb-3 '>
                   <Link to='/login'>
                     <button className="text-white border-0 btn" style={{ padding: '5px 15px 7px 15px', backgroundImage: 'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5)' }}>
                       Login
                     </button>
                   </Link>
-                </div>
+                </div> */}
                 <div>
                   <Link to='/signup'>
                     <button className="btn text-white border-0 text-center " style={{ padding: '5px 15px 7px 15px', backgroundImage: 'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5)' }}>

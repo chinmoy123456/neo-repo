@@ -3,64 +3,22 @@ import { useState } from 'react';
 
 const Contact = () => {
 
-    const [formData, setFormData] = useState({
-        name: '',
-        date: '',
-        email: '',
-        contactNumber: '',
-        selectedService: '',
-        message: '',
+    const [user, setUser] = useState({
+        name: "",
+        date: "",
+        email: "",
+        contact: "",
+        service: "",
+        message: "",
+
     });
 
-    const [errors, setErrors] = useState({});
+    let name,value;
+    const getUserData = (event) => {
+        name= event.target.name;
+        value= event.target.value;
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    const validateForm = () => {
-        let valid = true;
-        const newErrors = {};
-
-        if (!formData.name.trim()) {
-            newErrors.name = '';
-            valid = false;
-        }
-
-        if (!formData.email.trim() || !/^\S+@\S+\.\S+$/.test(formData.email)) {
-            newErrors.email = '';
-            valid = false;
-        }
-
-        if (!formData.contactNumber.trim() || !/^\d{10}$/.test(formData.contactNumber)) {
-            newErrors.contactNumber = '';
-            valid = false;
-        }
-
-        setErrors(newErrors);
-        return valid;
-    };
-
-    const handleBookNow = () => {
-        if (validateForm()) {
-            // Implement booking logic here or send the data to the server
-            console.log('Booking confirmed:', formData);
-            // Reset form fields
-            setFormData({
-                name: '',
-                date: '',
-                email: '',
-                contactNumber: '',
-                selectedService: '',
-                message: '',
-            });
-            alert(`Booking confirmed!`);
-            setErrors({});
-        }
+        setUser({...user,[name]:value});
     };
 
     return (
@@ -84,24 +42,24 @@ const Contact = () => {
                     <div className='row col-md-10 mx-1 fs-5'>
                         Name
                         <input
-                            // required
+                            required
+                            value={user.name}
+                            onChange={getUserData}
                             type="text"
                             name='name'
-                            value={formData.name}
-                            onChange={handleChange}
+                            placeholder='Enter your name'
                             className="mt-2 p-1 inputField bg-transparent border border-light text-light"
                         />
-                        {errors.name && <p className="error">{errors.name}</p>}
                     </div>
                 </div>
                 <div className='form-group row mx-1 mb-4 col-md-10 fs-5'>
                     Date
                     <input
-                        // required
+                        required
+                        value={user.date}
+                        onChange={getUserData}
                         type="date"
                         name="date"
-                        value={formData.date}
-                        onChange={handleChange}
                         className=" mt-2 p-1 inputField bg-transparent border border-light text-light"
                         style={{ colorScheme: 'dark' }}
                     />
@@ -109,38 +67,39 @@ const Contact = () => {
                 <div className='form-group row col-md-10 mx-1 mb-4 fs-5'>
                     Email
                     <input
+                        required
+                        value={user.email}
+                        onChange={getUserData}
                         type="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                        placeholder='Enter your email address'
                         className=" mt-2 p-1 inputField bg-transparent border border-light text-light"
-                        required
                     />
-                    {errors.email && <p className="error">{errors.email}</p>}
                 </div>
                 <div className=' form-group row col-md-10 mx-1 mb-4 fs-5'>
                     Contact No.
                     <input
-                        // required
+                        required
+                        value={user.contact}
+                        onChange={getUserData}
                         type="text"
-                        name="contactNumber"
-                        value={formData.contactNumber}
-                        onChange={handleChange}
+                        name="contact"
+                        placeholder='Enter your phone number'
                         className=" mt-2 p-1 inputField bg-transparent border border-light text-light"
                     />
-                    {errors.contactNumber && <p className="error">{errors.contactNumber}</p>}
                 </div>
                 <div className="row mx-1 col-md-10 mx-1 mb-4 fs-5">
                     Select a Service
                     <select
-                        name="selectedService"
-                        value={formData.selectedService}
-                        onChange={handleChange}
+                        required
+                        value={user.service}
+                        onChange={getUserData}
+                        name="service"
                         className="form-select mt-2 p-1 inputField bg-transparent border border-light text-light"
                     >
                         <option className='text-dark' value="Photography">Photography</option>
-                        <option className='text-dark'value="Videography">Videography</option>
-                        <option className='text-dark'value="Commercial Shoot">Commercial Shoot</option>
+                        <option className='text-dark' value="Videography">Videography</option>
+                        <option className='text-dark' value="Commercial Shoot">Commercial Shoot</option>
                     </select>
                 </div>
 
@@ -149,13 +108,15 @@ const Contact = () => {
                     Message
                     <textarea
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
+                        value={user.message}
+                        onChange={getUserData}
+                        placeholder='Your message here...'
                         className="form-control mt-2 pt-0 inputField bg-transparent border border-light text-light"
                         style={{ height: '153px' }} />
                 </div>
                 <div className='pt-4 button-wrapper'>
-                    <button className='contact-button rounded-4 border-0' type="button" onClick={() => handleBookNow()}>
+                    <button className='contact-button rounded-4 border-0'
+                        type="button">
                         <label className=' fs-5'>
                             Send
                         </label>

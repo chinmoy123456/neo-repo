@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.activeColor {
+    /* padding-top: 5px;
+    width: 50%; */
+    /* height: 30px; */
+    border: 2px solid rgb(118, 116, 116);
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 .navbarText ul li a {
     color: #ffffff;
     font-family: Outfit;
@@ -67,8 +80,8 @@ a:hover {
 
 .aboutNeo1 {
     font-family: Outfit;
-    font-size: 15px;
-    letter-spacing: 0.12em;
+    font-size: 14px;
+    letter-spacing: 0.105em;
 }
 
 .blog1 {
@@ -76,6 +89,10 @@ a:hover {
     font-family: Outfit;
 }
 
+.blog-items {
+    font-family: Verdana;
+    font-weight: 100;
+}
 
 .inputField {
     border-radius: 4px;
@@ -85,6 +102,14 @@ a:hover {
     background-color: bisque;
     padding: 1.0em 1.8em;
 
+}
+
+.reset-button {
+    color: black;
+    font-family: Outfit;
+    width: 90%;
+    background-color: bisque;
+    padding: 0.1em 0.6em;
 }
 
 .button-wrapper button:hover {

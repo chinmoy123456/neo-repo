@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import SignupPage from './Pages/SignupPage';
+import ForgotPassword from './Components/ForgotPassword';
 import LoginPage from './Pages/LoginPage';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
@@ -19,10 +20,11 @@ import StorePage from './Pages/StorePage';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/reset" element={<ForgotPassword />} />
         <Route path="/" exact element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
@@ -36,8 +38,9 @@ function App() {
         <Route path="/store" element={<StorePage />} />
         <Route path='/contact' element={<ContactPage />} />
 
+
       </Routes>
-    </Router>
+    </BrowserRouter>
 
 
     // <div>
