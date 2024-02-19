@@ -4,7 +4,6 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import SignupPage from './Pages/SignupPage';
 import ForgotPassword from './Components/ForgotPassword';
-import LoginPage from './Pages/LoginPage';
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
 import BlogPage from './Pages/BlogPage'
@@ -22,7 +21,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/reset" element={<ForgotPassword />} />
         <Route path="/" exact element={<HomePage />} />
