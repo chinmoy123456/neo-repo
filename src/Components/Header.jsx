@@ -2,7 +2,7 @@ import React from 'react'
 import '../CSS/Style.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faBagShopping } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 
 function Header() {
@@ -27,27 +27,16 @@ function Header() {
                   <Link to='/about' className="nav-link text-white" aria-current="page" href="#">ABOUT</Link>
                 </li>
                 <li className="nav-item mx-1">
-                  <Link to='/blog' className="nav-link text-white" href="#">BLOG</Link>
+                  <Link to='/blog' className="nav-link text-white" href="/">BLOG</Link>
                 </li>
                 <li className="nav-item mx-1">
-                  <Link to='/portfolio' className="nav-link text-white" href="#">PORTFOLIO</Link>
+                  <Link to='/portfolio' className="nav-link text-white" href="/">PORTFOLIO</Link>
                 </li>
                 <li className="nav-item mx-1">
-                  <Link to='/store' className="nav-link text-white" href="#">STORE</Link>
+                  <Link to='/store' className="nav-link text-white" href="/">STORE</Link>
                 </li>
-                {/* <li clasNames="nav-item ">
-                  <Link to='/contact' className="nav-link text-white" href="#">Contact </Link>
-                </li> */}
               </ul>
               <div className="d-md-none">
-                {/* Tablet or Mobile view: Login and Signup buttons */}
-                {/* <div className='mb-3 '>
-                  <Link to='/login'>
-                    <button className="text-white border-0 btn" style={{ padding: '5px 15px 7px 15px', backgroundImage: 'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5)' }}>
-                      Login
-                    </button>
-                  </Link>
-                </div> */}
                 <div>
                   <Link to='/signup'>
                     <button className="btn text-white border-0 text-center " style={{ padding: '5px 15px 7px 15px', backgroundImage: 'linear-gradient(to right, #1446d1, #4d41cb, #6a3cc4, #8037bd, #9132b5)' }}>

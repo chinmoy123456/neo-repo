@@ -1,13 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* overflow: scroll; */
+    /* box-sizing: border-box; */
 }
 
 .activeColor {
-    /* padding-top: 5px;
-    width: 50%; */
-    /* height: 30px; */
     border: 2px solid rgb(118, 116, 116);
     border-radius: 9px;
     cursor: pointer;
@@ -35,7 +33,7 @@ a {
 
 a:hover {
     /* text-decoration: underline;  */
-    color: bisque !important;
+    color: rgb(171, 177, 173) !important;
 }
 
 .my-awesome-icon {
@@ -52,15 +50,15 @@ a:hover {
     background-image: url(../Images/homeImg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: static;
-    width: 100vw;
+    /* position: static; */
+    /* width: 100vw; */
     height: 100vh;
     opacity: 1;
 }
 
 .home-text {
     padding-top: 225px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Outfit;
     letter-spacing: 0.2em;
 }
 

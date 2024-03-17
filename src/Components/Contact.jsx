@@ -13,13 +13,16 @@ const Contact = () => {
 
     });
 
-    let name,value;
+    let name, value;
     const getUserData = (event) => {
-        name= event.target.name;
-        value= event.target.value;
-
-        setUser({...user,[name]:value});
+        name = event.target.name;
+        value = event.target.value;
+        setUser({ ...user, [name]: value });
     };
+
+    const handleSend = () => {
+        console.log(user);
+    }
 
     return (
         <div className='row mx-0 px-3 pt-5 pb-3' style={{ backgroundColor: 'black' }}>
@@ -95,15 +98,15 @@ const Contact = () => {
                         value={user.service}
                         onChange={getUserData}
                         name="service"
+                        placeholder='Select service'
                         className="form-select mt-2 p-1 inputField bg-transparent border border-light text-light"
                     >
+                        <option disabled selected value="">Select service</option>
                         <option className='text-dark' value="Photography">Photography</option>
                         <option className='text-dark' value="Videography">Videography</option>
                         <option className='text-dark' value="Commercial Shoot">Commercial Shoot</option>
                     </select>
                 </div>
-
-
                 <div className='row col-md-10 mx-1 fs-5'>
                     Message
                     <textarea
@@ -114,12 +117,9 @@ const Contact = () => {
                         className="form-control mt-2 pt-0 inputField bg-transparent border border-light text-light"
                         style={{ height: '153px' }} />
                 </div>
-                <div className='pt-4 button-wrapper'>
-                    <button className='contact-button rounded-4 border-0'
-                        type="button">
-                        <label className=' fs-5'>
-                            Send
-                        </label>
+                <div className='pt-4 button-wrapper' onClick={handleSend}>
+                    <button className='contact-button rounded-4 border-0' type="button">
+                        <label className=' fs-5'> Send </label>
                     </button>
                 </div>
             </form>

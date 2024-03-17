@@ -2,7 +2,6 @@ import React from 'react'
 
 function Home() {
     return (
-        <div >
             <div className='home text-start '>
                 <div className='home-text d-flex flex-column justify-content-center align-items-center text-light mt-6'>
                     <div className='home-text-1'>
@@ -13,7 +12,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
