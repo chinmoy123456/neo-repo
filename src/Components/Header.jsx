@@ -50,7 +50,6 @@ function Header() {
           <div className='align-items-center mt-2'>
             <div className='d-none d-lg-block d-md-block'>
               <Link to='/signup' href=''><FontAwesomeIcon className=' mx-5 my-awesome-icon' icon={faUser} /></Link>
-              {/* <a href=''><FontAwesomeIcon className='mx-3 my-awesome-icon' icon={faBagShopping} /></a> */}
             </div>
           </div>
           <button className="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

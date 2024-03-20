@@ -8,8 +8,9 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { useNavigate } from 'react-router-dom';
-import { database} from './config';
+import { database } from './config';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
 
@@ -22,7 +23,7 @@ const Signup = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        if (type == "signup") {
+        if (type === "signup") {
             createUserWithEmailAndPassword(database, email, password)
                 .then((data) => {
                     console.log(data, "authData");
@@ -44,8 +45,8 @@ const Signup = () => {
         }
     };
 
-    const handleReset = async(e)=>{
-            history("/reset")
+    const handleReset = async (e) => {
+        history("/reset")
     }
 
 
@@ -54,10 +55,10 @@ const Signup = () => {
             <Container maxWidth="xs">
                 <div className='row fs-4 align-items-center justify-content-center text-center mx-3 mb-5'>
                     <div className='col-md-6'>
-                        <div className={login == false ? 'activeColor' : 'pointer'} onClick={() => setLogin(false)}>Sign Up</div>
+                        <div className={login === false ? 'activeColor' : 'pointer'} onClick={() => setLogin(false)}>Sign Up</div>
                     </div>
                     <div className='col-md-6'>
-                        <div className={login == true ? 'activeColor' : 'pointer'} onClick={() => setLogin(true)}>Sign In</div>
+                        <div className={login === true ? 'activeColor' : 'pointer'} onClick={() => setLogin(true)}>Sign In</div>
                     </div>
                 </div>
                 <Box
@@ -127,11 +128,13 @@ const Signup = () => {
                             {login ? 'Sign in' : 'Signup'}
                         </Button>
                         <Grid container justifyContent="center" onClick={handleReset}>
-                            <Grid item>
-                                <a href='' style={{textDecoration: "none"}}>
-                                    Forgot password
-                                </a>
-                            </Grid>
+                            <Link to='/forgotpassword'>
+                                <Grid item>
+                                    <a href='/' style={{ textDecoration: "none" }}>
+                                        Forgot password
+                                    </a>
+                                </Grid>
+                            </Link>
                         </Grid>
                     </Box>
                 </Box>

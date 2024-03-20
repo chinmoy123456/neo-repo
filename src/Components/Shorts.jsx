@@ -16,7 +16,7 @@ function Shorts() {
                 <div className='col-md-4 col-sm-12 portfolio-item'>
                     <div className="image-container">
                         <div className='pb-4'>
-                            <img src={ShortsImg1} style={{ width: '100%', height: '600px' }} />
+                            <img src={ShortsImg1} alt='Images' style={{ width: '100%', height: '600px' }} />
                             <div className="overlay-shorts d-flex flex-column align-items-center justify-content-center">
                                 <a href='https://www.instagram.com/reel/CivaDSOAWji/?utm_source=ig_web_copy_link' target='blank'>
                                     <button className="view-button">
@@ -34,7 +34,7 @@ function Shorts() {
                 <div className='col-md-4 col-sm-12 portfolio-item'>
                     <div className="image-container">
                         <div className='pb-4'>
-                            <img src={ShortsImg2} style={{ width: '100%', height: '600px' }} />
+                            <img src={ShortsImg2} alt='Images' style={{ width: '100%', height: '600px' }} />
                             <div className="overlay-shorts d-flex flex-column align-items-center justify-content-center">
                                 <a href='https://www.instagram.com/reel/Cfrgroigd0o/?utm_source=ig_web_copy_link' target='blank'>
                                     <button className="view-button">
@@ -52,7 +52,7 @@ function Shorts() {
                 <div className='col-md-4 col-sm-12 portfolio-item'>
                     <div className="image-container">
                         <div className='pb-4'>
-                            <img src={ShortsImg3} style={{ width: '100%', height: '600px' }} />
+                            <img src={ShortsImg3} alt='Images' style={{ width: '100%', height: '600px' }} />
                             <div className="overlay-shorts d-flex flex-column align-items-center justify-content-center">
                                 <a href='https://www.instagram.com/reel/CSEPMiEDSX_/?utm_source=ig_web_copy_link' target='blank'>
                                     <button className="view-button">

@@ -1,9 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow: scroll; */
-    /* box-sizing: border-box; */
 }
+
 
 .activeColor {
     border: 2px solid rgb(118, 116, 116);

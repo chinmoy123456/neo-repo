@@ -34,29 +34,10 @@ function App() {
         <Route path="/aftermovie" element={<AftermoviePage />} />
         <Route path="/youtube" element={<YoutubePage />} />
         <Route path="/store" element={<StorePage />} />
+        <Route path='/forgotpassword' element={<ContactPage />} />
         <Route path='/contact' element={<ContactPage />} />
-
-
       </Routes>
     </BrowserRouter>
-
-
-    // <div>
-    //   <SignUpPage />
-    //   <SignInPage />
-    //   <HomePage />   
-    //   <AboutPage />
-    //   <BlogPage />
-    //   <StorePage />
-    //   <ContactPage />
-    //   <PortfolioPage />
-    //   <CommercialPage/>
-    //   <ShortFilmPage />
-    //   <ShortsPage />
-    //   <CartPage />
-    //   <StorePage/>
-
-    // </div>
   );
 }
 

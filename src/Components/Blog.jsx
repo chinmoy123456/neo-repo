@@ -13,24 +13,23 @@ function Blog() {
                 Blog
             </div>
             <div className='row mx-3  text-light'>
-                {/* <div className='col-md-1'></div> */}
                 <div className='blog-items col-md-6 col-sm-12 pt-5'>
-                    <a href='' >
-                        <img src={blogImg1} height="550px" width="100%" className='mb-3' />
+                    <a href='/'>
+                        <img src={blogImg1} alt='Images' height="550px" width="100%" className='mb-3' />
                     </a>
                     <div>
                         <div>
                             <h2>Flickers of Hope</h2>
                         </div>
                         <div>
-                            In the heart of Diwali’s enchantment, I stumbled upon this poignant scene—a young boy , cradling delicate clay lamps, or diyas, in his weathered hands. His eyes, like twin constellations, held stories of generations past and dreams of futures yet to unfold.
+                            In the heart of Diwali's enchantment, I stumbled upon this poignant scene—a young boy , cradling delicate clay lamps, or diyas, in his weathered hands. His eyes, like twin constellations, held stories of generations past and dreams of futures yet to unfold.
                         </div>
                     </div>
                 </div>
                 <div className='blog-items col-md-6 col-sm-12 pt-5'>
                     <div className='row'>
                         <a href=' '>
-                            <img src={blogImg2} height="500px" width="100%" className='mb-3' />
+                            <img src={blogImg2} alt='Images' height="500px" width="100%" className='mb-3' />
                         </a>
                         <div>
                             <div>
@@ -46,8 +45,8 @@ function Blog() {
 
             <div className='blog-items row mx-3 text-light'>
                 <div className='col-md-6 pt-5 col-sm-12'>
-                    <a href=' ' >
-                        <img src={blogImg3} height="500px" width="100%" className='mb-3' />
+                    <a href='/' >
+                        <img src={blogImg3} alt='images' height="500px" width="100%" className='mb-3' />
                     </a>
                     <div>
                         <div>
@@ -58,8 +57,8 @@ function Blog() {
                     </div>
                 </div>
                 <div className='blog-items col-md-6 pt-5 col-sm-12'>
-                    <a href=''>
-                        <img src={blogImg4} height="550px" width="100%" className='mb-3' />
+                    <a href='/'>
+                        <img src={blogImg4} alt='images' height="550px" width="100%" className='mb-3' />
                     </a>
                     <div>
                         <div>
@@ -68,7 +67,7 @@ function Blog() {
                         <div>
                             Embark on a sensory journey through the vibrant tapestry of Indian spices, where every flavor tells a story and every aroma is a dance. From the fiery kick of red chili to the earthy warmth of cumin, the spices of India weave together a culinary masterpiece that tantalizes the taste buds and ignites the soul.                        </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     )
