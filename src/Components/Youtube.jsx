@@ -2,6 +2,8 @@ import React from 'react'
 import ytImg1 from '../Images/ytImg1.jpg'
 import ytImg2 from '../Images/ytImg2.jpg'
 import ytImg3 from '../Images/ytImg3.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 
 function Youtube() {
@@ -13,9 +15,16 @@ function Youtube() {
 
             <div className="row align-items-start mx-3 pb-5">
                 <div class="col-md-6 col-sm-12 px-5 text-light">
-                    <a href='https://youtu.be/Ce_j54zs028' target="blank">
-                        <img src={ytImg1} alt='Images' height="350px" width="100%" className='mb-3' />
-                    </a>
+                    <div className="image-container">
+                        <a href='https://youtu.be/Ce_j54zs028' target="blank">
+                            <img src={ytImg1} alt='Images' height="350px" width="100%" className='mb-3 border' />
+                            <div className="overlay-watch d-flex flex-column align-items-center justify-content-center">
+                                <button className="view-button ">
+                                    <FontAwesomeIcon className='mx-3 shorts-icon' icon={faPlay} />
+                                </button>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div className='col-md-6  p-5'>
                     <div className='sf1 pb-3'>
@@ -32,9 +41,16 @@ function Youtube() {
 
             <div className="row align-items-start mx-3 pb-5">
                 <div class="col-md-6 col-sm-12 px-5 text-light">
-                    <a href='https://www.youtube.com/watch?v=B5qnsjEQh8A' target="blank">
-                        <img src={ytImg2} alt='Images' height="350px" width="100%" className='mb-3' />
-                    </a>
+                    <div className="image-container">
+                        <a href='https://www.youtube.com/watch?v=B5qnsjEQh8A' target="blank">
+                            <img src={ytImg2} alt='Images' height="350px" width="100%" className='mb-3 border' />
+                            <div className="overlay-watch d-flex flex-column align-items-center justify-content-center">
+                                <button className="view-button ">
+                                    <FontAwesomeIcon className='mx-3 shorts-icon' icon={faPlay} />
+                                </button>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div className='col-md-6  p-5'>
                     <div className='sf1 pb-3'>
@@ -51,9 +67,16 @@ function Youtube() {
 
             <div className="row align-items-start mx-3 pb-5">
                 <div class="col-md-6 col-sm-12 px-5 text-light">
-                    <a href='https://www.youtube.com/watch?v=I6u4dSs4eRQ' target="blank">
-                        <img src={ytImg3} alt='Images' height="350px" width="100%" className='mb-3' />
-                    </a>
+                    <div className="image-container">
+                        <a href='https://www.youtube.com/watch?v=I6u4dSs4eRQ' target="blank">
+                            <img src={ytImg3} alt='Images' height="350px" width="100%" className='mb-3 border' />
+                        </a>
+                        <div className="overlay-watch d-flex flex-column align-items-center justify-content-center">
+                            <button className="view-button ">
+                                <FontAwesomeIcon className='mx-3 shorts-icon' icon={faPlay} />
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-md-6  p-5'>
                     <div className='sf1 pb-3'>
@@ -67,7 +90,7 @@ function Youtube() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

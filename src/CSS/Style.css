@@ -136,6 +136,16 @@ a:hover {
     transition: 0.5s ease;
 }
 
+.overlay-watch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    transition: 0.5s ease;
+    position: absolute;
+}
+
 .image-container:hover .overlay {
     opacity: 1;
 }
@@ -215,7 +225,7 @@ a:hover {
     }
 
     .home-text {
-        padding-top: 160px;
+        padding-top: 190px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         letter-spacing: 0.2em;
 
@@ -316,6 +326,7 @@ a:hover {
     }
 
     .home-text {
+        top: 20px;
         padding-top: 160px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         letter-spacing: 0.2em;
